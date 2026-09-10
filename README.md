@@ -1,4 +1,8 @@
-# Microsoft Developer Kit
+# AI-Tool
+
+Technology Education
+
+## Microsoft Developer Kit
 
 This folder is a local developer toolkit that groups Microsoft-oriented starter projects, SDK shortcuts, and a preserved database backup.
 
