@@ -2,3 +2,14 @@
 **/obj/
 **/node_modules/
 *.log
+.vs/
+.vscode/.ropeproject/
+*.user
+*.suo
+*.tmp
+*.cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+Database-Backup-*/
