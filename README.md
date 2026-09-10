@@ -25,6 +25,8 @@ Run this from the kit root:
 
 The script checks Node, Python, and .NET starter projects in one pass.
 
+For the full local tool and shortcut inventory, see `KIT-MANIFEST.md`.
+
 ## Manual Commands
 
 ```powershell
