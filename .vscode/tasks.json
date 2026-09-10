@@ -2,9 +2,38 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Verify Developer Kit",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/verify-kit.ps1",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe",
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-Command"
+          ]
+        }
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
       "label": "Run .NET starter",
       "type": "shell",
       "command": "dotnet run --project \"${workspaceFolder}/StarterProjects/DotnetApp/DotnetApp.csproj\"",
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Build .NET starter",
+      "type": "shell",
+      "command": "dotnet build \"${workspaceFolder}/StarterProjects/DotnetApp/DotnetApp.csproj\"",
+      "group": "build",
       "problemMatcher": "$msCompile"
     },
     {
@@ -22,7 +51,21 @@
     {
       "label": "Test WebApp",
       "type": "shell",
+      "command": "npm test --prefix \"${workspaceFolder}/StarterProjects/WebApp\"",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Start WebApp",
+      "type": "shell",
+      "command": "npm start --prefix \"${workspaceFolder}/StarterProjects/WebApp\"",
+      "problemMatcher": []
+    },
+    {
+      "label": "Smoke Test WebApp Endpoint",
+      "type": "shell",
       "command": "node -e \"const http=require('node:http'); const req=http.get('http://127.0.0.1:3000', res => { if (res.statusCode !== 200) process.exit(1); console.log('WebApp smoke test passed'); res.resume(); }); req.on('error', () => process.exit(1));\"",
+      "group": "test",
       "problemMatcher": []
     }
   ]

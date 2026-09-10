@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "name": "AI-Tool",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "git.openRepositoryInParentFolders": "always"
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-dotnettools.csharp",
+      "ms-dotnettools.csdevkit",
+      "ms-python.python",
+      "GitHub.vscode-github-actions",
+      "GitHub.vscode-pull-request-github"
+    ]
+  }
+}

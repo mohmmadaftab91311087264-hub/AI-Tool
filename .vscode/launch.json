@@ -17,6 +17,16 @@
       "request": "launch",
       "program": "${workspaceFolder}/StarterProjects/PythonApp/main.py",
       "console": "integratedTerminal"
+    },
+    {
+      "name": "Debug .NET starter",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "Build .NET starter",
+      "program": "${workspaceFolder}/StarterProjects/DotnetApp/bin/Debug/net10.0/DotnetApp.dll",
+      "cwd": "${workspaceFolder}/StarterProjects/DotnetApp",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
     }
   ]
 }

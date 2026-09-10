@@ -1,0 +1,16 @@
+{
+  "dotnet.defaultSolution": "disable",
+  "editor.formatOnSave": true,
+  "explorer.excludeGitIgnore": true,
+  "files.exclude": {
+    "**/bin": true,
+    "**/obj": true,
+    "**/node_modules": true,
+    "**/__pycache__": true,
+    "Database-Backup-*": true
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "python.defaultInterpreterPath": "python",
+  "terminal.integrated.defaultProfile.windows": "PowerShell"
+}
