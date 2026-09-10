@@ -31,6 +31,8 @@ For the full local tool and shortcut inventory, see `KIT-MANIFEST.md`.
 
 ```powershell
 cd StarterProjects\WebApp
+npm start
+
 npm test
 
 cd ..\NodeApp

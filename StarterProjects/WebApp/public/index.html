@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI-Tool</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Workspace navigation">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">AI</div>
+          <div>
+            <h1>AI-Tool</h1>
+            <p>Developer control center</p>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="Dashboard sections">
+          <a href="#overview" class="nav-link active">Overview</a>
+          <a href="#tools" class="nav-link">Tools</a>
+          <a href="#commands" class="nav-link">Commands</a>
+          <a href="#status" class="nav-link">Status</a>
+        </nav>
+
+        <div class="sidebar-panel">
+          <span class="panel-label">Repository</span>
+          <strong>mohmmadaftab91311087264-hub/AI-Tool</strong>
+          <a href="https://github.com/mohmmadaftab91311087264-hub/AI-Tool" target="_blank" rel="noreferrer">Open GitHub</a>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <section id="overview" class="overview">
+          <div>
+            <p class="eyebrow">Workspace ready</p>
+            <h2>Build, verify, and manage the AI-Tool kit from one place.</h2>
+          </div>
+          <img class="tool-map" src="/tool-map.svg" alt="AI-Tool connected workspace map">
+          <div class="overview-actions" aria-label="Primary commands">
+            <button class="button primary" data-copy=".\scripts\verify-kit.ps1">Copy Verify Command</button>
+            <button class="button" data-copy="code-insiders AI-Tool.code-workspace">Copy Open Workspace</button>
+          </div>
+        </section>
+
+        <section class="metrics" aria-label="Setup summary">
+          <article>
+            <span>GitHub</span>
+            <strong>Synced</strong>
+          </article>
+          <article>
+            <span>CI</span>
+            <strong>Green</strong>
+          </article>
+          <article>
+            <span>SDKs</span>
+            <strong>Linked</strong>
+          </article>
+          <article>
+            <span>Editor</span>
+            <strong>Insiders</strong>
+          </article>
+        </section>
+
+        <section id="tools" class="toolbar" aria-label="Tool filters">
+          <label class="search">
+            <span>Search tools</span>
+            <input id="toolSearch" type="search" placeholder="Search GitHub, .NET, Edge..." autocomplete="off">
+          </label>
+          <div class="segments" role="group" aria-label="Category filter">
+            <button class="segment active" data-filter="all">All</button>
+            <button class="segment" data-filter="core">Core</button>
+            <button class="segment" data-filter="sdk">SDKs</button>
+            <button class="segment" data-filter="microsoft">Microsoft</button>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div>
+            <div class="section-heading">
+              <h3>Linked Tools</h3>
+              <span id="toolCount">0 tools</span>
+            </div>
+            <div id="toolGrid" class="tool-grid" aria-live="polite"></div>
+          </div>
+
+          <aside id="status" class="status-panel">
+            <div class="section-heading">
+              <h3>Kit Status</h3>
+              <span id="healthBadge" class="badge">Checking</span>
+            </div>
+            <ul class="checklist">
+              <li><span></span> Git remote connected</li>
+              <li><span></span> VS Code Insiders workspace ready</li>
+              <li><span></span> .NET SDK pinned by global.json</li>
+              <li><span></span> GitHub Actions workflow active</li>
+              <li><span></span> Store metadata tracked</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section id="commands" class="commands">
+          <div class="section-heading">
+            <h3>Quick Commands</h3>
+            <span>Click to copy</span>
+          </div>
+          <div class="command-list">
+            <button data-copy=".\scripts\verify-kit.ps1"><code>.\scripts\verify-kit.ps1</code></button>
+            <button data-copy="git status --short --branch"><code>git status --short --branch</code></button>
+            <button data-copy="npm test --prefix StarterProjects/WebApp"><code>npm test --prefix StarterProjects/WebApp</code></button>
+            <button data-copy="dotnet build StarterProjects/DotnetApp/DotnetApp.csproj"><code>dotnet build StarterProjects/DotnetApp/DotnetApp.csproj</code></button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js"></script>
+  </body>
+</html>
